@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Title>AKSoftware.Blazor.TailwindTransition</Title>
     <Authors>Ahmad Mozaffar</Authors>
     <Company>AKSoftware</Company>
     <Description>Blazor component that helps the developers whom are using TailwindCSS as their CSS framework to enable the transition feature for the Show/Hide components provided by TailwindCSS</Description>
