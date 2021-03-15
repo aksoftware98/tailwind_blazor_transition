@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Ahmad Mozaffar</Authors>
+    <Company>AKSoftware</Company>
+    <Description>Blazor component that helps the developers whom are using TailwindCSS as their CSS framework to enable the transition feature for the Show/Hide components provided by TailwindCSS</Description>
+    <Copyright>AKSoftware 2021</Copyright>
+    <PackageProjectUrl>https://github.com/aksoftware98/tailwind_blazor_transition</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aksoftware98/tailwind_blazor_transition</RepositoryUrl>
+    <PackageTags>blazor,tailwindcss,css,transition</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageReleaseNotes>TWTransitionalElement for the parent Div &amp; TWTransition for the internal transional Divs</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSoftware.Blazor.TailwindTransition", "AKSoftware.Blazor.TailwindTransition\AKSoftware.Blazor.TailwindTransition.csproj", "{753DDFAE-0287-451D-B1A1-E3965FA6DAD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{6B1DF0C6-8E43-45AC-9971-96FCC23A2ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailwindTransitionWASMSample", "Demo\TailwindTransitionWASMSample\TailwindTransitionWASMSample.csproj", "{922705D7-9976-4FA5-8007-4FB3007D332C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{753DDFAE-0287-451D-B1A1-E3965FA6DAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753DDFAE-0287-451D-B1A1-E3965FA6DAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753DDFAE-0287-451D-B1A1-E3965FA6DAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753DDFAE-0287-451D-B1A1-E3965FA6DAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922705D7-9976-4FA5-8007-4FB3007D332C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922705D7-9976-4FA5-8007-4FB3007D332C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922705D7-9976-4FA5-8007-4FB3007D332C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922705D7-9976-4FA5-8007-4FB3007D332C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{922705D7-9976-4FA5-8007-4FB3007D332C} = {6B1DF0C6-8E43-45AC-9971-96FCC23A2ABA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9273E4D2-EFE1-42C7-B413-E00A31D76E0D}
+	EndGlobalSection
+EndGlobal

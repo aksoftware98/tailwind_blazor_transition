@@ -1,0 +1,10 @@
+﻿@inherits TWTransitionalComponentBase
+
+<div class="@_hiddenClass @TransitionClasses.ToString() @AdditionalClasses">
+    <CascadingValue Value="this" IsFixed="true">
+        @ChildContent
+    </CascadingValue>
+</div>
+@code {
+
+}
