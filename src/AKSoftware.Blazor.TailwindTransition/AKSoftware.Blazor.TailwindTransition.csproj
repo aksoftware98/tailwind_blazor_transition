@@ -13,7 +13,9 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageReleaseNotes>TWTransitionalElement for the parent Div &amp; TWTransition for the internal transional Divs</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   
@@ -27,6 +29,13 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
