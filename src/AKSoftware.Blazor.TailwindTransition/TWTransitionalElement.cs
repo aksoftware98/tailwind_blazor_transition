@@ -71,7 +71,7 @@ namespace AKSoftware.Blazor.TailwindTransition
             {
                 tasks.Add(item.Toggle());
             }
-            Console.WriteLine(tasks.Count());
+            //Console.WriteLine(tasks.Count());
             // Run all the tasks
             await Task.WhenAll(tasks);
 
