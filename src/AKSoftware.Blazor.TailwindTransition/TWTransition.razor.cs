@@ -26,7 +26,7 @@ namespace AKSoftware.Blazor.TailwindTransition
 
         protected override void OnInitialized()
         {
-            Console.WriteLine("Initialized" + GetHashCode());
+            //Console.WriteLine("Initialized" + GetHashCode());
             Parent.AddTransition(this);
         }
 
