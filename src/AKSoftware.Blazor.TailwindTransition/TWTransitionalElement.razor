@@ -1,6 +1,6 @@
 ﻿@inherits TWTransitionalComponentBase
 
-<div class="@_hiddenClass @TransitionClasses.ToString() @AdditionalClasses">
+<div class="@_hiddenClass @TransitionClasses.ToString() @AdditionalClasses" @attributes="InputAttributes">
     <CascadingValue Value="this" IsFixed="true">
         @ChildContent
     </CascadingValue>

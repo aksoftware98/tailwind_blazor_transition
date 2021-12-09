@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AKSoftware.Blazor.TailwindTransition
@@ -37,7 +38,8 @@ namespace AKSoftware.Blazor.TailwindTransition
         [Parameter]
         public string AdditionalClasses { get; set; }
 
-
+        [Parameter(CaptureUnmatchedValues = true)]
+        public Dictionary<string, object> InputAttributes { get; set; }
 
         protected StringBuilder TransitionClasses = new StringBuilder();
 
@@ -45,6 +47,10 @@ namespace AKSoftware.Blazor.TailwindTransition
         {
             if (string.IsNullOrWhiteSpace(Entering) && string.IsNullOrWhiteSpace(EnteringFrom) && string.IsNullOrWhiteSpace(EnteringTo))
                 return;
+
+            var durationMatch = Regex.Match(Entering, @"duration-(\d+)");
+            if (durationMatch.Success)
+                Duration = Convert.ToInt32(durationMatch.Groups[1].Value);
 
             TransitionClasses.Append(Entering);
             TransitionClasses.Append($" {EnteringFrom} ");
@@ -55,6 +61,10 @@ namespace AKSoftware.Blazor.TailwindTransition
 
         protected async Task HideAsync()
         {
+            var durationMatch = Regex.Match(Leaving, @"duration-(\d+)");
+            if (durationMatch.Success)
+                Duration = Convert.ToInt32(durationMatch.Groups[1].Value);
+
             if (Entering != Leaving && !string.IsNullOrWhiteSpace(Entering))
                 TransitionClasses.Replace(Entering, Leaving);
             else
