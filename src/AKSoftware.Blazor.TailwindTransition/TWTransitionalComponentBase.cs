@@ -54,9 +54,9 @@ namespace AKSoftware.Blazor.TailwindTransition
 
             TransitionClasses.Append(Entering);
             TransitionClasses.Append($" {EnteringFrom} ");
-            await Task.Delay(Duration / 10);
+            StateHasChanged();
+            await Task.Delay(1);
             TransitionClasses.Replace(EnteringFrom, EnteringTo);
-            await Task.Delay(Duration / 10);
         }
 
         protected async Task HideAsync()
